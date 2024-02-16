@@ -1,0 +1,78 @@
+.App {
+  text-align: center;
+  padding: 50px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.search-btn {
+  background-color: tomato;
+  font-size: 14px;
+  border-radius: 2px;
+  border: none;
+  height: 30px;
+  appearance: none;
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.search-btn:hover {
+  cursor: pointer;
+}
+
+.search-field {
+  height: 26px;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding-left: 3px;
+  flex-grow: 1;
+}
+
+.autocomplete-list {
+  position: absolute;
+  border: 1px solid black;
+  list-style: none;
+  margin: 0;
+  top: 30px;
+  left: 0;
+  padding: 2px;
+  background-color: white;
+  width: calc(100% - 70px);
+}
+
+.autocomplete-list li {
+  text-align: left;
+}
+
+.autocomplete-list li:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.movies-list {
+  list-style: none;
+  flex-basis: 100%;
+  padding-left: 0;
+}
+
+.movies-list li {
+  margin: 0 0 10px 0;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+  text-align: left;
+}
+
+.movies-list p {
+  margin: 0;
+}
+
+.genres {
+  display: flex;
+  flex-direction: row;
+}
